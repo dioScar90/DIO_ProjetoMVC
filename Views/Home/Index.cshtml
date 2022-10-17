@@ -3,6 +3,6 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Seja bem-vindo, @ViewBag.Environment!</h1>
+    <h1 class="display-4">Seja bem-vindo, <strong>@(char.ToUpper(ViewBag.Environment[0]) + ViewBag.Environment.Substring(1).ToLower())</strong>!</h1>
     <p> Use os menus acima para navegar <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
